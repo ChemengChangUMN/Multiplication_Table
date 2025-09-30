@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Multipulcation Table rendered in the browser</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device~width, initial-scale=1.0">
 </head>
 <body>
-    <section class="container">
-        <h1>Multipulcation Table Project</h1>
-        <h3>Rendered in the browser's console</h3>
-    </section>
+<section class="container">
+    <h1>Multipulcation Table Project</h1>
+    <h3>Rendered in the browser's console</h3>
+
+    <div class="generate-box">
+        <div class="inputs">
+            <label for="rows"> Rows:
+                <input id="rows" type="number" value="10" placeholder="How many rows?"/>
+            </label>
+
+            <label for="cols"> Columns:
+                <input id="cols" type="number" value="10" placeholder="How many cols?"/>
+            </label>
+        </div>
+
+        <button id="generate" onclick="createWithHtmlTable(getRowDesired(), getcolummnsdesired())"> Generate TABLE!
+        </button>
+    </div>
+
+
+    <div id="output"></div>
+</section>
 
 </body>
-<script src="javascript.js"> type="module"</script>
+<script src="javascript.js"></script>
 </html>
