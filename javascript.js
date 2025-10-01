@@ -61,17 +61,35 @@ function getcolummnsdesired() {
     return Number(document.getElementById("cols").value)
 }
 
+function getHighlightValue() {
+    let highlight = document.getElementById("highlight").value
 
-function createWithHtmlTable(rows, cols) {
+    return Number(highlight)
+}
+
+function createWithHtmlTable(rows, cols, highlight) {
     let string // define a variable called string
     if (rows && cols) { // if rows and columns were provided
         string = "<table>\n"
 
         for (let row = 1; row <= rows; row++) {
-            string += "<tr>\n"
+            // string += "<tr>\n"
+
+            if (highlight && highlight === row) {
+                string += "<tr class='highlight'>\n"
+            } else {
+                string += "<tr>\n"
+            }
 
             for (let col = 1; col <= cols; col++) {
-                string += "<td>"
+
+                if (highlight && highlight === col) {
+                    string += "<td class='highlight'>\n"
+                } else {
+                    string += "<td>"
+                }
+                // string += "<td>"
+
                 string += row * col
                 string += "</td>\n"
             }

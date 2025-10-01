@@ -20,12 +20,17 @@
             <label for="cols"> Columns:
                 <input id="cols" type="number" value="10" placeholder="How many cols?"/>
             </label>
+
+            <label for="highlight"> Highlight:
+                <input id="highlight" type="number" value="" placeholder="Highlight Row & Col"/>
+            </label>
+
+
         </div>
 
-        <button id="generate" onclick="createWithHtmlTable(getRowDesired(), getcolummnsdesired())"> Generate TABLE!
+        <button id="generate" onclick="createWithHtmlTable(getRowDesired(), getcolummnsdesired(), getHighlightValue())"> Generate TABLE!
         </button>
     </div>
-
 
     <div id="output"></div>
 </section>
