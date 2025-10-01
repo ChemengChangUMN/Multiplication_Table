@@ -10,12 +10,14 @@ section.container {
     border: 1px solid black;
     border-radius: 5px;
 
+
     h1 , h3 {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Times New Roman', sans-serif;
     }
     .generate-box {
         display: flex;
         gap: 10px;
+
 
 
 
@@ -47,9 +49,34 @@ section.container {
             border: 1px solid black;
             border-collapse: collapse;
 
+        tr {
+
+            &:first-of-type {
+                background-color: lightblue;
+
+            }
+
+            &:last-of-type {
+                background-color: lightyellow;
+            }
+
+
+        }
+
+
             td {
                 padding: 2px;
                 text-align: center;
+
+                &:last-of-type {
+                    background-color: lightcoral;
+                }
+
+                &:first-of-type {
+                    background-color: lightgreen;
+
+
+                }
 
             }
         }
