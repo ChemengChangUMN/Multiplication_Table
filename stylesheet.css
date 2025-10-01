@@ -7,10 +7,23 @@ section.container {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
 
+    h1 , h3 {
+        font-family: 'Montserrat', sans-serif;
+    }
     .generate-box {
         display: flex;
         gap: 10px;
+
+
+
+    button {
+        background-color: pink;
+        border-radius: 5px;
+        border-color: lightcoral;
+}
 
         .inputs {
             display: flex;
@@ -23,5 +36,23 @@ section.container {
                 justify-content: space-between;
             }
         }
+    }
+
+    #output {
+        overflow:scroll;
+        max-width: 90vw;
+        max-height: 60vh;
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+            td {
+                padding: 2px;
+                text-align: center;
+
+            }
+        }
+
     }
 }
