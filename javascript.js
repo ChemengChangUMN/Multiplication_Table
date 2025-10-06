@@ -67,6 +67,14 @@ function getHighlightValue() {
     return Number(highlight)
 }
 
+/*function getinputvalue() {
+    return Number(document.getElementById(inputID).value)
+
+    if (highlightValue !== '') {
+        return Number(highlightValue)
+    }
+}*/
+
 function createWithHtmlTable(rows, cols, highlight) {
     let string // define a variable called string
     if (rows && cols) { // if rows and columns were provided
