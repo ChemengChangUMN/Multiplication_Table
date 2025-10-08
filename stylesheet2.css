@@ -14,4 +14,19 @@ section.container {
     h1, h3 {
         font-family: 'Times New Roman', sans-serif;
     }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        border: 1px solid black;
+    }
+
+    .flex-item {
+        flex: 1;
+        margin: 10px;
+    }
 }
