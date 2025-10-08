@@ -6,11 +6,28 @@
     <link rel="stylesheet2" type="text/css" href="stylesheet2.css">
     <meta name="viewport" content="width=device~width, initial-scale=1.0">
 
-    <style type="text/css">
-        table {
-            border: 1px solid black;
-            td, th {
+    <style>
+        section.columns-of-rows {
+            display: flex;
+            /*flex-direction: column;*/
+            div {
                 border: 1px solid black;
+            }
+
+        }
+        section.rows-of-columns {
+            border: 1px solid black;
+            padding: 4px;
+
+            div.rows {
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid black;
+                padding: 4px;
+
+                div {
+                    border: 1px solid black;
+                }
             }
         }
     </style>
@@ -18,23 +35,48 @@
 </head>
 <body>
 
-<section class="container">
-    <h1>Multipulcation Table Project</h1>
-    <h3>Create your own multiplication table that is rendered with an HTML table</h3>
+<h1>Flex-Box Multipulcation Table Project</h1>
+<h3>Create your own multiplication table that is rendered with an HTML table</h3>
 
-        <div class="flex-container">
-            <table>
-                123
-                123
-                123
-            </table>
-        </div>
+<section class="columns-of-rows">
+    <div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
 
-    <table>
+    <div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
 
+    <div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
 
+</section>
 
-    </table>
+<section class="rows-of-columns">
+    <div class="rows">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="rows">
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="rows">
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
 
 </section>
 
