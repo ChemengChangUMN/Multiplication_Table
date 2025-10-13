@@ -1,166 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Flexbox Multiplication Table</title>
-    <link rel="stylesheet2" type="text/css" href="stylesheet2.css">
-    <meta name="viewport" content="width=device~width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         section.rows-of-columns {
             border: 1px solid black;
             padding: 4px;
+        }
 
-            div.rows {
-                display: flex;
-                justify-content: space-between;
-                border: 1px solid black;
-                padding: 4px;
+        section.rows-of-columns .rows {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 4px;
+        }
 
-                div {
-                    border: 1px solid black;
-                }
-            }
+        section.rows-of-columns .rows div {
+            border: 1px solid black;
+            padding: 4px;
+            width: 40px;
+            text-align: center;
         }
     </style>
-
 </head>
 <body>
 
-<h1>Flex-Box Multipulcation Table Project</h1>
+<h1>Flexbox Multiplication Table Project</h1>
 <h3>Create your own multiplication table that is rendered with an HTML table</h3>
 
 <section class="rows-of-columns">
+    <!-- Rows 1–10 (Fixed 9x row) -->
     <div class="rows">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>10</div>
+        <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
     </div>
-
     <div class="rows">
-        <div>2</div>
-        <div>4</div>
-        <div>6</div>
-        <div>8</div>
-        <div>10</div>
-        <div>12</div>
-        <div>14</div>
-        <div>16</div>
-        <div>18</div>
-        <div>20</div>
+        <div>2</div><div>4</div><div>6</div><div>8</div><div>10</div><div>12</div><div>14</div><div>16</div><div>18</div><div>20</div>
     </div>
-
     <div class="rows">
-        <div>3</div>
-        <div>6</div>
-        <div>9</div>
-        <div>12</div>
-        <div>15</div>
-        <div>18</div>
-        <div>21</div>
-        <div>24</div>
-        <div>27</div>
-        <div>30</div>
+        <div>3</div><div>6</div><div>9</div><div>12</div><div>15</div><div>18</div><div>21</div><div>24</div><div>27</div><div>30</div>
     </div>
-
     <div class="rows">
-        <div>4</div>
-        <div>8</div>
-        <div>12</div>
-        <div>16</div>
-        <div>20</div>
-        <div>24</div>
-        <div>28</div>
-        <div>32</div>
-        <div>36</div>
-        <div>40</div>
+        <div>4</div><div>8</div><div>12</div><div>16</div><div>20</div><div>24</div><div>28</div><div>32</div><div>36</div><div>40</div>
     </div>
-
     <div class="rows">
-        <div>5</div>
-        <div>10</div>
-        <div>15</div>
-        <div>20</div>
-        <div>25</div>
-        <div>30</div>
-        <div>35</div>
-        <div>40</div>
-        <div>45</div>
-        <div>50</div>
+        <div>5</div><div>10</div><div>15</div><div>20</div><div>25</div><div>30</div><div>35</div><div>40</div><div>45</div><div>50</div>
     </div>
-
     <div class="rows">
-        <div>6</div>
-        <div>12</div>
-        <div>18</div>
-        <div>24</div>
-        <div>30</div>
-        <div>36</div>
-        <div>42</div>
-        <div>48</div>
-        <div>54</div>
-        <div>60</div>
+        <div>6</div><div>12</div><div>18</div><div>24</div><div>30</div><div>36</div><div>42</div><div>48</div><div>54</div><div>60</div>
     </div>
-
     <div class="rows">
-        <div>7</div>
-        <div>14</div>
-        <div>21</div>
-        <div>28</div>
-        <div>35</div>
-        <div>42</div>
-        <div>49</div>
-        <div>56</div>
-        <div>63</div>
-        <div>70</div>
+        <div>7</div><div>14</div><div>21</div><div>28</div><div>35</div><div>42</div><div>49</div><div>56</div><div>63</div><div>70</div>
     </div>
-
     <div class="rows">
-        <div>8</div>
-        <div>16</div>
-        <div>24</div>
-        <div>32</div>
-        <div>40</div>
-        <div>48</div>
-        <div>56</div>
-        <div>64</div>
-        <div>72</div>
-        <div>80</div>
+        <div>8</div><div>16</div><div>24</div><div>32</div><div>40</div><div>48</div><div>56</div><div>64</div><div>72</div><div>80</div>
     </div>
-
     <div class="rows">
-        <div>9</div>
-        <div>18</div>
-        <div>27</div>
-        <div>36</div>
-        <div>45</div>
-        <div>54</div>
-        <div>63</div>
-        <div>73</div>
-        <div>81</div>
-        <div>90</div>
+        <div>9</div><div>18</div><div>27</div><div>36</div><div>45</div><div>54</div><div>63</div><div>72</div><div>81</div><div>90</div>
     </div>
-
     <div class="rows">
-        <div>10</div>
-        <div>20</div>
-        <div>30</div>
-        <div>40</div>
-        <div>50</div>
-        <div>60</div>
-        <div>70</div>
-        <div>80</div>
-        <div>90</div>
-        <div>100</div>
+        <div>10</div><div>20</div><div>30</div><div>40</div><div>50</div><div>60</div><div>70</div><div>80</div><div>90</div><div>100</div>
     </div>
-
 </section>
 
 </body>
