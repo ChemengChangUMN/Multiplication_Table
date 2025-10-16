@@ -2,34 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Multiplication Table rendered in the browser</title>
+    <title>Flexbox Multiplication Table</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <meta name="viewport" content="width=device~width, initial-scale=1.0">
+
 </head>
 <body>
+
 <section class="container">
-    <h1>Multiplication Table Project</h1>
-    <h3>Create your own multiplication table that is rendered with an HTML table</h3>
+    <h1>Flex-Box Multiplication Table Project</h1>
+    <h3>Create your own multiplication table that is rendered with Flexbox</h3>
 
     <div class="generate-box">
         <div class="inputs">
-            <label for="rows"> Rows:
+            <label for="rows">Rows:
                 <input id="rows" type="number" value="10" placeholder="How many rows?"/>
             </label>
 
-            <label for="cols"> Columns:
-                <input id="cols" type="number" value="10" placeholder="How many cols?"/>
+            <label for="cols">Cols:
+                <input id="cols" type="number" value="10" placeholder="How many columns?"/>
             </label>
-
-            <label for="highlight"> Highlight:
-                <input id="highlight" type="number" value="" placeholder="Highlight Row & Col"/>
-            </label>
-
-
         </div>
 
-        <button id="generate" onclick="createWithHtmlTable(getRowDesired(), getcolummnsdesired(), getHighlightValue())"> Generate TABLE!
-        </button>
+        <button id="generate" onclick="createWithFlexbox(getRowDesired(), getColumnDesired())"> Generate!</button>
     </div>
 
     <div id="output"></div>
